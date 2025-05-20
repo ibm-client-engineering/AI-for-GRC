@@ -207,6 +207,18 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#implementation-overview" id="toc-implementation-overview" class="nav-link active" data-scroll-target="#implementation-overview">Implementation Overview</a></li>
+  <li><a href="#integrate-watsonx.ai-model-into-openpages" id="toc-integrate-watsonx.ai-model-into-openpages" class="nav-link" data-scroll-target="#integrate-watsonx.ai-model-into-openpages">Integrate watsonx.ai Model into OpenPages</a>
+  <ul class="collapse">
+  <li><a href="#integrate-the-watsonx.ai-model-into-openpages" id="toc-integrate-the-watsonx.ai-model-into-openpages" class="nav-link" data-scroll-target="#integrate-the-watsonx.ai-model-into-openpages">Integrate the watsonx.ai Model into OpenPages</a></li>
+  <li><a href="#model-access" id="toc-model-access" class="nav-link" data-scroll-target="#model-access">Model Access</a></li>
+  <li><a href="#inputs" id="toc-inputs" class="nav-link" data-scroll-target="#inputs">Inputs</a></li>
+  <li><a href="#outputs" id="toc-outputs" class="nav-link" data-scroll-target="#outputs">Outputs</a></li>
+  <li><a href="#guidance" id="toc-guidance" class="nav-link" data-scroll-target="#guidance">Guidance</a></li>
+  </ul></li>
+  <li><a href="#assign-watsonx.ai-model-to-openpages-view" id="toc-assign-watsonx.ai-model-to-openpages-view" class="nav-link" data-scroll-target="#assign-watsonx.ai-model-to-openpages-view">Assign Watsonx.ai model to OpenPages View</a>
+  <ul class="collapse">
+  <li><a href="#final-check" id="toc-final-check" class="nav-link" data-scroll-target="#final-check">Final Check</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -241,8 +253,138 @@ ul.task-list li input[type="checkbox"] {
 <li>Executive Summary Creation</li>
 <li>Categorization and Classification</li>
 </ol>
+</section>
+<section id="integrate-watsonx.ai-model-into-openpages" class="level2">
+<h2 class="anchored" data-anchor-id="integrate-watsonx.ai-model-into-openpages">Integrate watsonx.ai Model into OpenPages</h2>
+<section id="prerequisites" class="level4">
+<h4 class="anchored" data-anchor-id="prerequisites">Prerequisites</h4>
+<ul>
+<li>IBM Cloud Account</li>
+<li>IBM OpenPages instance</li>
+<li>IBM watsonx.ai instance with deployed asset</li>
+</ul>
+</section>
+<section id="integrate-the-watsonx.ai-model-into-openpages" class="level3">
+<h3 class="anchored" data-anchor-id="integrate-the-watsonx.ai-model-into-openpages">Integrate the watsonx.ai Model into OpenPages</h3>
+<ol type="1">
+<li>In the OpenPages platform, navigate to the Administration menu, then go to Integrations, then Custom Machine Learning Models.</li>
+<li>Click on New Model and you should see the following view:
+<ul>
+<li><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/screenshots/openpages-model-config.png" class="img-fluid figure-img"></p>
+<figcaption>OpenPages Custom Machine Learning Models - Create New Model Configurations</figcaption>
+</figure>
+</div></li>
+</ul></li>
+</ol>
+</section>
+<section id="model-access" class="level3">
+<h3 class="anchored" data-anchor-id="model-access">Model Access</h3>
+<ol type="1">
+<li>Enter a Name and a Label e.g.&nbsp;<strong>“Categorization”</strong></li>
+<li>Select <strong>“Watson Machine Learning on Cloud”</strong> for Watson Service Type</li>
+<li>Select <strong>“Display only”</strong> since we only want to display output from running the model</li>
+<li>For Access Parameters:
+<ol type="1">
+<li>Authentication URL: paste in the following <code>https://iam.cloud.ibm.com/identity/token</code></li>
+<li>API Key: <a href="https://cloud.ibm.com/iam/apikeys">Create a IAM Key</a> in the cloud account where the deployment lives</li>
+<li>Base Deployment URL: paste in the following <code>https://us-south.ml.cloud.ibm.com/ml/v4</code></li>
+<li>Deployment ID: <strong>Deployment ID</strong> found in <a href="https://dataplatform.cloud.ibm.com/ml-runtime/spaces?context=wx">Deployments</a></li>
+<li>Space ID: <em>Deployment Space ID</em> found in <a href="https://dataplatform.cloud.ibm.com/ml-runtime/spaces?context=wx">Deployments</a></li>
+<li>API version: <code>2021-05-01</code></li>
+</ol></li>
+<li>Click <strong>Test Connection</strong> to see if the setup was successful. Then, Click Next. Your screen should look similar to the following
+<ul>
+<li><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/screenshots/Test-connection-success.png" class="img-fluid figure-img"></p>
+<figcaption>Test Connection</figcaption>
+</figure>
+</div></li>
+</ul></li>
+</ol>
+</section>
+<section id="inputs" class="level3">
+<h3 class="anchored" data-anchor-id="inputs">Inputs</h3>
+<ol type="1">
+<li>For <strong>Object Type</strong>, select the OpenPages object type that you would like this model to be applied to from the options in the dropdown list.
+<ul>
+<li><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/screenshots/openpages-model-config-inputs.png" class="img-fluid figure-img"></p>
+<figcaption>OpenPages Custom Machine Learning Models - Configure Inputs</figcaption>
+</figure>
+</div></li>
+</ul></li>
+<li>Select “Manual” or “Automatic” based on business requirements.</li>
+<li>In <strong>Add the input fields of your model and map them to fields in OpenPages</strong>, select the fields that you would like to use as the input for the model to process. <em>In our example, we will be using Description field as the input, so we select “Description” from the OpenPages fields and type in “Description” for the Model input fields.</em></li>
+<li>Select checkbox <strong>Required</strong> for at least one field.</li>
+<li>The final setup should look similar to the following. Then, click Next.
+<ul>
+<li><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/screenshots/openpages-edit-model-inputs.png" class="img-fluid figure-img"></p>
+<figcaption>OpenPages Custom Machine Learning Models - Configure Inputs Complete</figcaption>
+</figure>
+</div></li>
+</ul></li>
+</ol>
+</section>
+<section id="outputs" class="level3">
+<h3 class="anchored" data-anchor-id="outputs">Outputs</h3>
+<ol type="1">
+<li>Select “Single insight” or “List of insights” based on your use case.</li>
+<li>In the <strong>Output label</strong> field, input a description of what the model output is about.</li>
+<li>In the <strong>JSONata string</strong> field, based on your model output configuration, specify the variable to display in the output field.</li>
+<li>The final setup should look similar to the following, then click Next.
+<ul>
+<li>For example - use the variable <code>predictions.values[0][0]</code></li>
+<li><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/screenshots/openpages-model-config-outputs.png" class="img-fluid figure-img"></p>
+<figcaption>OpenPages Custom Machine Learning Models - Configure Output</figcaption>
+</figure>
+</div></li>
+</ul></li>
+</ol>
+</section>
+<section id="guidance" class="level3">
+<h3 class="anchored" data-anchor-id="guidance">Guidance</h3>
+<ol type="1">
+<li>Input a <strong>Description</strong> for the model to help users understand what the model inputs and outputs. You could also modify the <strong>Style.</strong></li>
+<li>The final setup would looks similar like screenshot below. Click “Save” to complete model setup. In the Custom Machine Learning Models table, you should see status “V Complete”.
+<ul>
+<li><div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/screenshots/openpages-model-config-guidance.png" class="img-fluid figure-img"></p>
+<figcaption>OpenPages Custom Machine Learning Models - Configure Guidance</figcaption>
+</figure>
+</div></li>
+</ul></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="assign-watsonx.ai-model-to-openpages-view" class="level2">
+<h2 class="anchored" data-anchor-id="assign-watsonx.ai-model-to-openpages-view">Assign Watsonx.ai model to OpenPages View</h2>
+<ol type="1">
+<li>To assign model to views, navigate to the <strong>Administration menu</strong>, then go to <strong>Solution Configuration</strong>, and click on <strong>Views</strong>. <img src="../assets/screenshots/openpages-system-config-views.png" class="img-fluid"></li>
+<li>Enable <strong>Display Debug Info</strong> by navigating to the Administration menu, then the Other tab, then click on Display Debug Info. In the screenshot below, you can see blue text under “New Risk” which indicates that you are in Debug Info View. <strong>Click on the that blue text and it will link you to the exact view.</strong> <img src="../assets/screenshots/openpages-display-debug-info.png" class="img-fluid"></li>
+<li>This is an example of what a view configuration page looks like. <img src="../assets/screenshots/openpages-view-page.png" class="img-fluid"></li>
+<li>Click on the blue text “Description” and a right-hand-side panel will show up. Select the specific model that you would like to apply to this field. Click Done, then click Publish. <img src="../assets/screenshots/openpages-description-model-config.png" class="img-fluid"></li>
+</ol>
+<section id="final-check" class="level3">
+<h3 class="anchored" data-anchor-id="final-check">Final Check</h3>
+<ol type="1">
+<li>Navigate back to the view where the watsonx.ai model was applied. Input text to the Description field and a lightbulb should show up.</li>
+<li>Click on the lightbulb to open the right-hand side panel where the model output will show up.</li>
+<li>You could continue update the model prompt to further improve the model performance based on your business requirements <img src="../assets/screenshots/5Ws-lightbulb.png" class="img-fluid"></li>
+</ol>
+<hr>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

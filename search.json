@@ -15,7 +15,29 @@
     "href": "src/implementation_methodology/AI-Augmented OpenPages Experience​.html",
     "title": "AI-Augmented OpenPages Experience​",
     "section": "",
-    "text": "Implementation Overview\nThe objective of this solution is to demonstrate AI for GRC solution that has the ability to streamline the GRC process and improve the overall efficiency of GRC workflow. To build an effective and efficient GRC system and achieve the desired outcomes for success, this solution will leverage watsonx Orchestrate to deliver these core capabilities:\n\nAutomating Child Data Object Creation from Parent Data Object Entries\nRealtime Similarity Identification for Data Objects\nExecutive Summary Creation\nCategorization and Classification",
+    "text": "The objective of this solution is to demonstrate AI for GRC solution that has the ability to streamline the GRC process and improve the overall efficiency of GRC workflow. To build an effective and efficient GRC system and achieve the desired outcomes for success, this solution will leverage watsonx Orchestrate to deliver these core capabilities:\n\nAutomating Child Data Object Creation from Parent Data Object Entries\nRealtime Similarity Identification for Data Objects\nExecutive Summary Creation\nCategorization and Classification",
+    "crumbs": [
+      "Implementation Methodology",
+      "AI-Augmented OpenPages Experience​"
+    ]
+  },
+  {
+    "objectID": "src/implementation_methodology/AI-Augmented OpenPages Experience​.html#integrate-watsonx.ai-model-into-openpages",
+    "href": "src/implementation_methodology/AI-Augmented OpenPages Experience​.html#integrate-watsonx.ai-model-into-openpages",
+    "title": "AI-Augmented OpenPages Experience​",
+    "section": "Integrate watsonx.ai Model into OpenPages",
+    "text": "Integrate watsonx.ai Model into OpenPages\n\nPrerequisites\n\nIBM Cloud Account\nIBM OpenPages instance\nIBM watsonx.ai instance with deployed asset\n\n\n\nIntegrate the watsonx.ai Model into OpenPages\n\nIn the OpenPages platform, navigate to the Administration menu, then go to Integrations, then Custom Machine Learning Models.\nClick on New Model and you should see the following view:\n\n\n\n\nOpenPages Custom Machine Learning Models - Create New Model Configurations\n\n\n\n\n\n\nModel Access\n\nEnter a Name and a Label e.g. “Categorization”\nSelect “Watson Machine Learning on Cloud” for Watson Service Type\nSelect “Display only” since we only want to display output from running the model\nFor Access Parameters:\n\nAuthentication URL: paste in the following https://iam.cloud.ibm.com/identity/token\nAPI Key: Create a IAM Key in the cloud account where the deployment lives\nBase Deployment URL: paste in the following https://us-south.ml.cloud.ibm.com/ml/v4\nDeployment ID: Deployment ID found in Deployments\nSpace ID: Deployment Space ID found in Deployments\nAPI version: 2021-05-01\n\nClick Test Connection to see if the setup was successful. Then, Click Next. Your screen should look similar to the following\n\n\n\n\nTest Connection\n\n\n\n\n\n\nInputs\n\nFor Object Type, select the OpenPages object type that you would like this model to be applied to from the options in the dropdown list.\n\n\n\n\nOpenPages Custom Machine Learning Models - Configure Inputs\n\n\n\nSelect “Manual” or “Automatic” based on business requirements.\nIn Add the input fields of your model and map them to fields in OpenPages, select the fields that you would like to use as the input for the model to process. In our example, we will be using Description field as the input, so we select “Description” from the OpenPages fields and type in “Description” for the Model input fields.\nSelect checkbox Required for at least one field.\nThe final setup should look similar to the following. Then, click Next.\n\n\n\n\nOpenPages Custom Machine Learning Models - Configure Inputs Complete\n\n\n\n\n\n\nOutputs\n\nSelect “Single insight” or “List of insights” based on your use case.\nIn the Output label field, input a description of what the model output is about.\nIn the JSONata string field, based on your model output configuration, specify the variable to display in the output field.\nThe final setup should look similar to the following, then click Next.\n\nFor example - use the variable predictions.values[0][0]\n\n\n\nOpenPages Custom Machine Learning Models - Configure Output\n\n\n\n\n\n\nGuidance\n\nInput a Description for the model to help users understand what the model inputs and outputs. You could also modify the Style.\nThe final setup would looks similar like screenshot below. Click “Save” to complete model setup. In the Custom Machine Learning Models table, you should see status “V Complete”.\n\n\n\n\nOpenPages Custom Machine Learning Models - Configure Guidance",
+    "crumbs": [
+      "Implementation Methodology",
+      "AI-Augmented OpenPages Experience​"
+    ]
+  },
+  {
+    "objectID": "src/implementation_methodology/AI-Augmented OpenPages Experience​.html#assign-watsonx.ai-model-to-openpages-view",
+    "href": "src/implementation_methodology/AI-Augmented OpenPages Experience​.html#assign-watsonx.ai-model-to-openpages-view",
+    "title": "AI-Augmented OpenPages Experience​",
+    "section": "Assign Watsonx.ai model to OpenPages View",
+    "text": "Assign Watsonx.ai model to OpenPages View\n\nTo assign model to views, navigate to the Administration menu, then go to Solution Configuration, and click on Views. \nEnable Display Debug Info by navigating to the Administration menu, then the Other tab, then click on Display Debug Info. In the screenshot below, you can see blue text under “New Risk” which indicates that you are in Debug Info View. Click on the that blue text and it will link you to the exact view. \nThis is an example of what a view configuration page looks like. \nClick on the blue text “Description” and a right-hand-side panel will show up. Select the specific model that you would like to apply to this field. Click Done, then click Publish. \n\n\nFinal Check\n\nNavigate back to the view where the watsonx.ai model was applied. Input text to the Description field and a lightbulb should show up.\nClick on the lightbulb to open the right-hand side panel where the model output will show up.\nYou could continue update the model prompt to further improve the model performance based on your business requirements",
     "crumbs": [
       "Implementation Methodology",
       "AI-Augmented OpenPages Experience​"
@@ -73,7 +95,29 @@
     "href": "src/implementation_methodology/Profile-based Data Querying.html",
     "title": "Profile-based Data Querying",
     "section": "",
-    "text": "Implementation Overview\nThe objective of this solution is to demonstrate AI for GRC solution that has the ability to streamline the GRC process and improve the overall efficiency of GRC workflow. To build an effective and efficient GRC system and achieve the desired outcomes for success, this solution will leverage watsonx Orchestrate to deliver these core capabilities:\n\nAnswering questions on OpenPages Data Objects​\nAnswering questions on OpenPages Attachments​",
+    "text": "The objective of this solution is to demonstrate AI for GRC solution that has the ability to streamline the GRC process and improve the overall efficiency of GRC workflow. To build an effective and efficient GRC system and achieve the desired outcomes for success, this solution will leverage watsonx Orchestrate to deliver these core capabilities:\n\nAnswering questions on OpenPages Data Objects​\nAnswering questions on OpenPages Attachments​",
+    "crumbs": [
+      "Implementation Methodology",
+      "Profile-based Data Querying"
+    ]
+  },
+  {
+    "objectID": "src/implementation_methodology/Profile-based Data Querying.html#integrate-watsonx-assistant-with-openpages",
+    "href": "src/implementation_methodology/Profile-based Data Querying.html#integrate-watsonx-assistant-with-openpages",
+    "title": "Profile-based Data Querying",
+    "section": "Integrate watsonx Assistant with OpenPages",
+    "text": "Integrate watsonx Assistant with OpenPages\n\nIn Watsonx Assistant\n\nNavigate to Watsonx Assistant’s Integrations Tab\n\n\n\n\nwatsonx Orchestrate AI Assistant Integrations\n\n\n\nFind “Web chat”, click on “Open” -&gt; choose environment, and “Confirm”\nNavigate to Embed Tab and Copy the content in the text box. (This is an example)\n\n\n\n\nwatsonx Orchestrate AI Assistant Embed Webchat\n\n\n\n\n\n\nIn OpenPages\n\nClick Administration menu &gt; Integrations &gt; Watson Assistant.\nClick Import Configuration (The button left of New +)\nPaste the code snippet into the Configuration string box, and then click Import.\nAll good! You could now start interacting with your Watsonx Assistant in OpenPages.",
+    "crumbs": [
+      "Implementation Methodology",
+      "Profile-based Data Querying"
+    ]
+  },
+  {
+    "objectID": "src/implementation_methodology/Profile-based Data Querying.html#references",
+    "href": "src/implementation_methodology/Profile-based Data Querying.html#references",
+    "title": "Profile-based Data Querying",
+    "section": "References",
+    "text": "References\n\nConfiguring the integration between an assistant and OpenPages",
     "crumbs": [
       "Implementation Methodology",
       "Profile-based Data Querying"

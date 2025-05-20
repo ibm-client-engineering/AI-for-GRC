@@ -1,8 +1,0 @@
----
-title: "OpenPages Data Export"
-format: html
----
-
-### OpenPages Data Export
-
-(Details the process and techniques used to execute the technical solution)

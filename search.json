@@ -34,7 +34,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Project Name",
+    "title": "AI for GRC",
     "section": "",
     "text": "AL",
     "crumbs": [
@@ -42,11 +42,11 @@
     ]
   },
   {
-    "objectID": "index.html#description-project-name",
-    "href": "index.html#description-project-name",
-    "title": "Project Name",
-    "section": "Description: “Project Name”",
-    "text": "Description: “Project Name”",
+    "objectID": "index.html#description-ai-for-grc",
+    "href": "index.html#description-ai-for-grc",
+    "title": "AI for GRC",
+    "section": "Description: “AI for GRC”",
+    "text": "Description: “AI for GRC”",
     "crumbs": [
       "Problem Definition"
     ]
@@ -54,7 +54,7 @@
   {
     "objectID": "index.html#the-why",
     "href": "index.html#the-why",
-    "title": "Project Name",
+    "title": "AI for GRC",
     "section": "The Why",
     "text": "The Why\n(High-level description of the business challenges and client pain points)\n\nProblem Details\nSed elementum convallis quam, sed tempor massa dictum sit amet. Phasellus ultricies ante id massa scelerisque interdum. Vestibulum vitae volutpat felis. Sed metus magna, malesuada vitae odio eu, volutpat aliquam odio. Mauris eget purus ex. Praesent nec gravida lorem. Nam rhoncus bibendum nulla at viverra. Curabitur at diam sem. Pellentesque semper venenatis lorem quis pharetra. Cras venenatis consectetur ante vitae mattis. Etiam in augue vel nunc euismod sodales vitae eu arcu.\nMaecenas tempus ultricies sapien, porta suscipit est facilisis quis. Ut imperdiet massa condimentum sapien lobortis, dictum eleifend enim cursus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean interdum vel velit non dictum. Suspendisse bibendum neque ut nulla condimentum, quis dictum sem consectetur. Integer quis arcu sem. Sed condimentum dolor sed libero posuere, sed tristique nulla cursus. In hac habitasse platea dictumst. Aenean ullamcorper condimentum risus, at semper tortor consequat eu.\nPellentesque a semper nisl, a vehicula libero. Mauris aliquam porttitor nibh ut porttitor. Praesent eu sem lacinia, volutpat dolor id, interdum enim. Etiam sit amet urna rhoncus, iaculis ex hendrerit, suscipit urna. Duis id porta massa, ac ultrices nulla. Vestibulum ut rutrum lacus, ac vulputate libero. Sed metus massa, maximus ac vulputate nec, lacinia sit amet felis.\n\n\nAdditional Context\nSed elementum convallis quam, sed tempor massa dictum sit amet. Phasellus ultricies ante id massa scelerisque interdum. Vestibulum vitae volutpat felis. Sed metus magna, malesuada vitae odio eu, volutpat aliquam odio. Mauris eget purus ex. Praesent nec gravida lorem. Nam rhoncus bibendum nulla at viverra. Curabitur at diam sem. Pellentesque semper venenatis lorem quis pharetra. Cras venenatis consectetur ante vitae mattis. Etiam in augue vel nunc euismod sodales vitae eu arcu.\nMaecenas tempus ultricies sapien, porta suscipit est facilisis quis. Ut imperdiet massa condimentum sapien lobortis, dictum eleifend enim cursus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean interdum vel velit non dictum. Suspendisse bibendum neque ut nulla condimentum, quis dictum sem consectetur. Integer quis arcu sem. Sed condimentum dolor sed libero posuere, sed tristique nulla cursus. In hac habitasse platea dictumst. Aenean ullamcorper condimentum risus, at semper tortor consequat eu.\nPellentesque a semper nisl, a vehicula libero. Mauris aliquam porttitor nibh ut porttitor. Praesent eu sem lacinia, volutpat dolor id, interdum enim. Etiam sit amet urna rhoncus, iaculis ex hendrerit, suscipit urna. Duis id porta massa, ac ultrices nulla. Vestibulum ut rutrum lacus, ac vulputate libero. Sed metus massa, maximus ac vulputate nec, lacinia sit amet felis.",
     "crumbs": [
@@ -64,9 +64,9 @@
   {
     "objectID": "src/landing_page/landing_page.html",
     "href": "src/landing_page/landing_page.html",
-    "title": "Project Name",
+    "title": "AI for GRC",
     "section": "",
-    "text": "Project Name\nSubtitle\n\n\nOur Documentation \n\n\n\n\n\nNext Steps\n\n\n\nL ink 1\n\n\n\nLink 2"
+    "text": "AI for GRC\nSubtitle\n\n\nOur Documentation \n\n\n\n\n\nNext Steps\n\n\n\nL ink 1\n\n\n\nLink 2"
   },
   {
     "objectID": "src/implementation_methodology/Profile-based Data Querying.html",

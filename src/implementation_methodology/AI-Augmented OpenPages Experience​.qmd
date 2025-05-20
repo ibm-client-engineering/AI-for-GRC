@@ -11,3 +11,80 @@ The objective of this solution is to demonstrate AI for GRC solution that has th
 1. Realtime Similarity Identification for Data Objects
 1. Executive Summary Creation
 1. Categorization and Classification
+
+## Integrate watsonx.ai Model into OpenPages
+
+#### Prerequisites
+- IBM Cloud Account
+- IBM OpenPages instance
+- IBM watsonx.ai instance with deployed asset
+
+### Integrate the watsonx.ai Model into OpenPages
+1. In the OpenPages platform, navigate to the Administration menu, then go to Integrations, then Custom Machine Learning Models.
+2. Click on New Model and you should see the following view:
+   - ![OpenPages Custom Machine Learning Models - Create New Model Configurations](../assets/screenshots/openpages-model-config.png)
+
+### Model Access
+
+1. Enter a Name and a Label e.g. **"Categorization"**
+2. Select **"Watson Machine Learning on Cloud"** for Watson Service Type
+3. Select **"Display only"** since we only want to display output from running the model
+4. For Access Parameters:
+   1. Authentication URL: paste in the following `https://iam.cloud.ibm.com/identity/token`
+   2. API Key: [Create a IAM Key](https://cloud.ibm.com/iam/apikeys) in the cloud account where the deployment lives
+   3. Base Deployment URL: paste in the following `https://us-south.ml.cloud.ibm.com/ml/v4`
+   4. Deployment ID:  **Deployment ID** found in [Deployments](https://dataplatform.cloud.ibm.com/ml-runtime/spaces?context=wx)
+   5. Space ID: _Deployment Space ID_ found in [Deployments](https://dataplatform.cloud.ibm.com/ml-runtime/spaces?context=wx)
+   6. API version: `2021-05-01`
+5. Click **Test Connection** to see if the setup was successful. Then, Click Next. Your screen should look similar to the following 
+    - ![Test Connection](../assets/screenshots/Test-connection-success.png)
+
+### Inputs
+
+1. For **Object Type**, select the OpenPages object type that you would like this model to be applied to from the options in the dropdown list.
+   - ![OpenPages Custom Machine Learning Models - Configure Inputs](../assets/screenshots/openpages-model-config-inputs.png)
+2. Select "Manual" or "Automatic" based on business requirements.
+3. In **Add the input fields of your model and map them to fields in OpenPages**, select the fields that you would like to use as the input for the model to process. _In our example, we will be using Description field as the input, so we select "Description" from the OpenPages fields and type in "Description" for the Model input fields._
+4. Select checkbox **Required** for at least one field.
+5. The final setup should look similar to the following. Then, click Next.
+   - ![OpenPages Custom Machine Learning Models - Configure Inputs Complete](../assets/screenshots/openpages-edit-model-inputs.png)
+
+### Outputs
+
+1. Select "Single insight" or "List of insights" based on your use case.
+2. In the **Output label** field, input a description of what the model output is about.
+3. In the **JSONata string** field, based on your model output configuration, specify the variable to display in the output field.
+4. The final setup should look similar to the following, then click Next.
+    - For example - use the variable `predictions.values[0][0]`
+    - ![OpenPages Custom Machine Learning Models - Configure Output](../assets/screenshots/openpages-model-config-outputs.png)
+
+
+### Guidance
+
+1. Input a **Description** for the model to help users understand what the model inputs and outputs. You could also modify the **Style.**
+2. The final setup would looks similar like screenshot below. Click "Save" to complete model setup. In the Custom Machine Learning Models table, you should see status "V Complete".
+   - ![OpenPages Custom Machine Learning Models - Configure Guidance](../assets/screenshots/openpages-model-config-guidance.png)
+
+---
+
+## Assign Watsonx.ai model to OpenPages View
+
+1. To assign model to views, navigate to the **Administration menu**, then go to **Solution Configuration**, and click on **Views**.
+   ![](../assets/screenshots/openpages-system-config-views.png)
+2. Enable **Display Debug Info** by navigating to the Administration menu, then the Other tab, then click on Display Debug Info. In the screenshot below, you can see blue text under "New Risk" which indicates that you are in Debug Info View. **Click on the that blue text and it will link you to the exact view.**
+   ![](../assets/screenshots/openpages-display-debug-info.png)
+3. This is an example of what a view configuration page looks like.
+   ![](../assets/screenshots/openpages-view-page.png)
+4. Click on the blue text "Description" and a right-hand-side panel will show up. Select the specific model that you would like to apply to this field. Click Done, then click Publish.
+   ![](../assets/screenshots/openpages-description-model-config.png)
+
+### Final Check
+
+1. Navigate back to the view where the watsonx.ai model was applied. Input text to the Description field and a lightbulb should show up.
+2. Click on the lightbulb to open the right-hand side panel where the model output will show up.
+3. You could continue update the model prompt to further improve the model performance based on your business requirements
+   ![](../assets/screenshots/5Ws-lightbulb.png)
+
+---
+
+

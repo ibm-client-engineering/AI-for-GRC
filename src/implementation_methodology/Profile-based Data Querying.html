@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Step Two – AI for GRC</title>
+<title>Profile-based Data Querying – AI for GRC</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../src/implementation_methodology/stepthree-imp.html" rel="next">
-<link href="../../src/implementation_methodology/openpages-data-export.html" rel="prev">
+<link href="../../src/implementation_methodology/openpages-data-export.html" rel="next">
+<link href="../../src/implementation_methodology/AI-Augmented OpenPages Experience​.html" rel="prev">
 <link href="../../images/bee.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -126,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../src/implementation_methodology/openpages-data-export.html">Implementation Methodology</a></li><li class="breadcrumb-item"><a href="../../src/implementation_methodology/steptwo-imp.html">Step Two</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../src/implementation_methodology/AI-Augmented OpenPages Experience​.html">Implementation Methodology</a></li><li class="breadcrumb-item"><a href="../../src/implementation_methodology/Profile-based Data Querying.html">Profile-based Data Querying</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -156,19 +156,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../src/solution_overview/prepare.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Prepare</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../src/solution_overview/environment.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Environment</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../src/solution_overview/troubleshooting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Troubleshooting</span></a>
+ <span class="menu-text">Solution Overview</span></a>
   </div>
 </li>
       </ul>
@@ -184,20 +172,20 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../src/implementation_methodology/AI-Augmented OpenPages Experience​.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">AI-Augmented OpenPages Experience​</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../src/implementation_methodology/Profile-based Data Querying.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Profile-based Data Querying</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../src/implementation_methodology/openpages-data-export.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">OpenPages Data Export</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../src/implementation_methodology/steptwo-imp.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Step Two</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../src/implementation_methodology/stepthree-imp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Step Three</span></a>
   </div>
 </li>
       </ul>
@@ -218,16 +206,16 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#step-two-implementation" id="toc-step-two-implementation" class="nav-link active" data-scroll-target="#step-two-implementation">Step Two Implementation</a></li>
+  <li><a href="#implementation-overview" id="toc-implementation-overview" class="nav-link active" data-scroll-target="#implementation-overview">Implementation Overview</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../src/implementation_methodology/openpages-data-export.html">Implementation Methodology</a></li><li class="breadcrumb-item"><a href="../../src/implementation_methodology/steptwo-imp.html">Step Two</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../src/implementation_methodology/AI-Augmented OpenPages Experience​.html">Implementation Methodology</a></li><li class="breadcrumb-item"><a href="../../src/implementation_methodology/Profile-based Data Querying.html">Profile-based Data Querying</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Step Two</h1>
+<h1 class="title">Profile-based Data Querying</h1>
 </div>
 
 
@@ -244,11 +232,13 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="step-two-implementation" class="level3">
-<h3 class="anchored" data-anchor-id="step-two-implementation">Step Two Implementation</h3>
-<p>Phasellus at risus egestas, ultricies tortor efficitur, auctor augue. Suspendisse finibus maximus dui nec condimentum. Proin fringilla efficitur vehicula. Suspendisse sem lacus, iaculis quis erat et, facilisis sagittis est. Sed sapien justo, condimentum vitae aliquet sed, faucibus at ex. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce placerat ante eget diam tincidunt, vitae tincidunt sapien malesuada. Nullam ullamcorper justo eros. Duis ultricies aliquam dui, id aliquam lorem congue vitae. Ut porttitor, tellus eu dignissim semper, turpis nunc cursus libero, sed placerat est dui non enim.</p>
-<p>Vestibulum libero dolor, vehicula vitae risus non, consequat gravida neque. Maecenas a posuere sem. Quisque dignissim porta pretium. Nam mattis lacus commodo lobortis consequat. Vestibulum at massa a quam egestas accumsan. Fusce ac neque eu libero maximus aliquet id quis metus. In sodales neque ut turpis iaculis vehicula. Sed volutpat, tellus non laoreet aliquet, risus felis ornare dolor, interdum venenatis turpis metus in lorem. Aliquam quam ligula, porttitor non ultrices ac, lacinia ullamcorper massa. Integer molestie eleifend urna, imperdiet dignissim tellus malesuada ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tristique sem ac purus interdum, vitae pharetra erat fringilla. Integer non nunc a eros porttitor rutrum. Suspendisse ut libero urna. Vestibulum vitae est at diam vestibulum aliquet. Donec porta nunc eget lobortis mollis.</p>
-<p>Vestibulum luctus sodales odio, at luctus lacus lobortis a. Aliquam vulputate id turpis sit amet bibendum. Donec a dignissim tellus, vel vehicula erat. Pellentesque hendrerit ex magna, at dictum est pretium a. Vivamus faucibus ipsum lectus, ut elementum diam interdum scelerisque. Cras magna sapien, tincidunt quis eleifend at, tincidunt non eros. Aliquam ac augue turpis.</p>
+<section id="implementation-overview" class="level3">
+<h3 class="anchored" data-anchor-id="implementation-overview">Implementation Overview</h3>
+<p>The objective of this solution is to demonstrate AI for GRC solution that has the ability to streamline the GRC process and improve the overall efficiency of GRC workflow. To build an effective and efficient GRC system and achieve the desired outcomes for success, this solution will leverage watsonx Orchestrate to deliver these core capabilities:</p>
+<ol type="1">
+<li>Answering questions on OpenPages Data Objects​</li>
+<li>Answering questions on OpenPages Attachments​</li>
+</ol>
 
 
 </section>
@@ -655,13 +645,13 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../src/implementation_methodology/openpages-data-export.html" class="pagination-link" aria-label="OpenPages Data Export">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">OpenPages Data Export</span>
+      <a href="../../src/implementation_methodology/AI-Augmented OpenPages Experience​.html" class="pagination-link" aria-label="AI-Augmented OpenPages Experience​">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">AI-Augmented OpenPages Experience​</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../src/implementation_methodology/stepthree-imp.html" class="pagination-link" aria-label="Step Three">
-        <span class="nav-page-text">Step Three</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../src/implementation_methodology/openpages-data-export.html" class="pagination-link" aria-label="OpenPages Data Export">
+        <span class="nav-page-text">OpenPages Data Export</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

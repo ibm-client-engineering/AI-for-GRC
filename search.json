@@ -15,7 +15,18 @@
     "href": "src/implementation_methodology/AI-Augmented OpenPages Experience​.html",
     "title": "AI-Augmented OpenPages Experience​",
     "section": "",
-    "text": "The objective of this solution is to demonstrate AI for GRC solution that has the ability to streamline the GRC process and improve the overall efficiency of GRC workflow. To build an effective and efficient GRC system and achieve the desired outcomes for success, this solution will leverage watsonx Orchestrate to deliver these core capabilities:\n\nAutomating Child Data Object Creation from Parent Data Object Entries\nRealtime Similarity Identification for Data Objects\nExecutive Summary Creation\nCategorization and Classification",
+    "text": "The objective of this solution is to demonstrate AI for GRC solution that has the ability to streamline the GRC process and improve the overall efficiency of GRC workflow. To build an effective and efficient GRC system and achieve the desired outcomes for success, this solution will leverage watsonx.ai to deliver these core capabilities:\n\nAutomating Child Data Object Creation from Parent Data Object Entries\nRealtime Similarity Identification for Data Objects\nExecutive Summary Creation\nCategorization and Classification",
+    "crumbs": [
+      "Implementation Methodology",
+      "AI-Augmented OpenPages Experience​"
+    ]
+  },
+  {
+    "objectID": "src/implementation_methodology/AI-Augmented OpenPages Experience​.html#implementation-overview",
+    "href": "src/implementation_methodology/AI-Augmented OpenPages Experience​.html#implementation-overview",
+    "title": "AI-Augmented OpenPages Experience​",
+    "section": "",
+    "text": "The objective of this solution is to demonstrate AI for GRC solution that has the ability to streamline the GRC process and improve the overall efficiency of GRC workflow. To build an effective and efficient GRC system and achieve the desired outcomes for success, this solution will leverage watsonx.ai to deliver these core capabilities:\n\nAutomating Child Data Object Creation from Parent Data Object Entries\nRealtime Similarity Identification for Data Objects\nExecutive Summary Creation\nCategorization and Classification",
     "crumbs": [
       "Implementation Methodology",
       "AI-Augmented OpenPages Experience​"
@@ -95,29 +106,7 @@
     "href": "src/implementation_methodology/Profile-based Data Querying.html",
     "title": "Profile-based Data Querying",
     "section": "",
-    "text": "The objective of this solution is to demonstrate AI for GRC solution that has the ability to streamline the GRC process and improve the overall efficiency of GRC workflow. To build an effective and efficient GRC system and achieve the desired outcomes for success, this solution will leverage watsonx Orchestrate to deliver these core capabilities:\n\nAnswering questions on OpenPages Data Objects​\nAnswering questions on OpenPages Attachments​",
-    "crumbs": [
-      "Implementation Methodology",
-      "Profile-based Data Querying"
-    ]
-  },
-  {
-    "objectID": "src/implementation_methodology/Profile-based Data Querying.html#integrate-watsonx-assistant-with-openpages",
-    "href": "src/implementation_methodology/Profile-based Data Querying.html#integrate-watsonx-assistant-with-openpages",
-    "title": "Profile-based Data Querying",
-    "section": "Integrate watsonx Assistant with OpenPages",
-    "text": "Integrate watsonx Assistant with OpenPages\n\nIn Watsonx Assistant\n\nNavigate to Watsonx Assistant’s Integrations Tab\n\n\n\n\nwatsonx Orchestrate AI Assistant Integrations\n\n\n\nFind “Web chat”, click on “Open” -&gt; choose environment, and “Confirm”\nNavigate to Embed Tab and Copy the content in the text box. (This is an example)\n\n\n\n\nwatsonx Orchestrate AI Assistant Embed Webchat\n\n\n\n\n\n\nIn OpenPages\n\nClick Administration menu &gt; Integrations &gt; Watson Assistant.\nClick Import Configuration (The button left of New +)\nPaste the code snippet into the Configuration string box, and then click Import.\nAll good! You could now start interacting with your Watsonx Assistant in OpenPages.",
-    "crumbs": [
-      "Implementation Methodology",
-      "Profile-based Data Querying"
-    ]
-  },
-  {
-    "objectID": "src/implementation_methodology/Profile-based Data Querying.html#references",
-    "href": "src/implementation_methodology/Profile-based Data Querying.html#references",
-    "title": "Profile-based Data Querying",
-    "section": "References",
-    "text": "References\n\nConfiguring the integration between an assistant and OpenPages",
+    "text": "Implementation Overview\nThe objective of this solution is to demonstrate AI for GRC solution that has the ability to streamline the GRC process and improve the overall efficiency of GRC workflow. To build an effective and efficient GRC system and achieve the desired outcomes for success, this solution will leverage watsonx Orchestrate to deliver these core capabilities:\n\nAnswering questions on OpenPages Data Objects​\nAnswering questions on OpenPages Attachments​\n\n\n\nIntegrate watsonx Orchestrate’s AI Assistant with OpenPages\n\nIn watsonx Orchestrate’s AI Assistant\n\nNavigate to watsonx Orchestrate’s AI Assistant’s Integrations Tab\n\n\n\n\nwatsonx Orchestrate AI Assistant Integrations\n\n\n\nFind “Web chat”, click on “Open” -&gt; choose environment, and “Confirm”\nNavigate to Embed Tab and Copy the content in the text box. (This is an example)\n\n\n\n\nwatsonx Orchestrate AI Assistant Embed Webchat\n\n\n\n\n\n\nIn OpenPages\n\nClick Administration menu &gt; Integrations &gt; Watson Assistant.\nClick Import Configuration (The button left of New +)\nPaste the code snippet into the Configuration string box, and then click Import.\nAll good! You could now start interacting with your AI Assistant in OpenPages.\n\nTry logout and login if you didn’t see the AI Assistant show up in the lower right corner of OpenPages interface.\n\n\n\n\n\nReferences\n\nConfiguring the integration between an assistant and OpenPages",
     "crumbs": [
       "Implementation Methodology",
       "Profile-based Data Querying"
@@ -128,7 +117,7 @@
     "href": "src/implementation_methodology/openpages-data-export.html",
     "title": "OpenPages Data Export",
     "section": "",
-    "text": "OpenPages Data Export\nHere’s the high level steps, write a markdown documentation about OpenPages Data Export.\n\nNavigate to Integrations -&gt; Export Data tab\nClick New Configuration\nEnter Name e.g. “Issue Data Export”, click Next\n\n\n\n\nOpenPages Data Export - General\n\n\n\nSelect Object types for data export, e.g. “Issue”. Select locale, and folders.\n\n\n\n\nOpenPages Data Export - Selection Details\n\n\n\nclick “Next”\n\n\n\nCredentials for IBM Cloud Object storage\n\nSelect destination type “IBM Cloud Object Storage”\n\n\nNavigate to IBM Cloud Object storage instance to capture the following credentials\n\nCreate Service Credentials:\n\nLog in to the IBM Cloud console and navigate to your instance of Object Storage.\nIn the navigation bar for the instance, click “Service Credentials” tab.\nClick “New credential” and provide the necessary information. Select “Manager” role. Switch the Include HMAC Credential to On. Verify the option is switched to On before continuing.\n\n\n\n\nCreate IBM Cloud Object Storage Service Credentials\n\n\n\nClick Add to generate service credential.\nExpand the service credentials details and copy the following values for OpenPages configuration\n\nAccess key ID: cos_hmac_keys.access_key_id\nSecret Key: cos_hmac_keys.secret_access_key\n\n\nCreate Bucket:\n\nSelect the IBM Cloud Object Storage instance where you plan to create the bucket.\nWithin instance, select the bucket that you’d like to connect. Then, click “Create bucket”.\nSelect Create a Custom Bucket or Quickly Get Started\nEnter bucket name and configurations of the bucket.\nOnce bucket created, select bucket and navigate to Configuration tab.\nCopy Public endpoint, Bucket name, Location and paste the values to OpenPages configuration\n\nEndpoint: add “https://” to the beginning of the copied public endpoint,the complete url will be similar to https://s3.us-south.cloud-object-storage.appdomain.cloud\nBucket name\nBucket region: e.g. “us-south”\n\n\n\n\n\n\nOpenPages Data Export - Set Destination\n\n\n\n\n\n\n\nTest Connection & Setup Schedule\n\nClick “Test Connection” to confirm credentials are entered properly\nClick “Next”\nFor set schedule, enter a name, e.g. “Daily”\nSelect Recurring, set a time, and click Create\n\n\n\nTest Data Export\n\nTo test the connection, click on the three dots, select “Run Data Export”.\n\n\n\n\nOpenPages Data Export - Run Data Export\n\n\n\nLast Run status will show “Completed Successfully”\nNavigate to IBM Cloud Object Storage to view data export.",
+    "text": "OpenPages Data Export\nHere’s the high level steps, write a markdown documentation about OpenPages Data Export.\n\nNavigate to Integrations -&gt; Export Data tab\nClick New Configuration\nEnter Name e.g. “Issue Data Export”, click Next\n\n\n\n\nOpenPages Data Export - General\n\n\n\nSelect Object types for data export, e.g. “Issue”. Select locale, and folders.\n\n\n\n\nOpenPages Data Export - Selection Details\n\n\n\nclick “Next”\n\n\n\nCredentials for IBM Cloud Object storage\n\nSelect destination type “IBM Cloud Object Storage”\n\n\nNavigate to IBM Cloud Object storage instance to capture the following credentials\n\nCreate Service Credentials:\n\nLog in to the IBM Cloud console and navigate to your instance of Object Storage.\nIn the navigation bar for the instance, click “Service Credentials” tab.\nClick “New credential” and provide the necessary information. Select “Manager” role. Switch the Include HMAC Credential to On. Verify the option is switched to On before continuing.\n\n\n\n\nCreate IBM Cloud Object Storage Service Credentials\n\n\n\nClick Add to generate service credential.\nExpand the service credentials details and copy the following values for OpenPages configuration\n\nAccess key ID: cos_hmac_keys.access_key_id\nSecret Key: cos_hmac_keys.secret_access_key\n\n\nCreate Bucket:\n\nSelect the IBM Cloud Object Storage instance where you plan to create the bucket.\nWithin instance, select the bucket that you’d like to connect. Then, click “Create bucket”.\nSelect Create a Custom Bucket or Quickly Get Started\nEnter bucket name and configurations of the bucket.\nOnce bucket created, select bucket and navigate to Configuration tab.\nCopy Public endpoint, Bucket name, Location and paste the values to OpenPages configuration\n\nEndpoint: add “https://” to the beginning of the copied public endpoint,the complete url will be similar to https://s3.us-south.cloud-object-storage.appdomain.cloud\nBucket name\nBucket region: e.g. “us-south”\n\n\n\n\n\n\nOpenPages Data Export - Set Destination\n\n\n\n\n\n\n\nTest Connection & Setup Schedule\n\nClick “Test Connection” to confirm credentials are entered properly\nClick “Next”\nFor set schedule, enter a name, e.g. “Daily”\nSelect Recurring, set a time, and click Create\n\n\n\nTest Data Export\n\nTo test the connection, click on the three dots, select “Run Data Export”.\n\n\n\n\nOpenPages Data Export - Run Data Export\n\n\n\nLast Run status will show “Completed Successfully”\nNavigate to IBM Cloud Object Storage to view data export.\n\n\n\nReferences\n\nExporting OpenPages data to be used by other applications",
     "crumbs": [
       "Implementation Methodology",
       "OpenPages Data Export"

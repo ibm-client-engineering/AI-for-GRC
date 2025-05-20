@@ -1,0 +1,47 @@
+---
+title: "OpenPages Data Export"
+format: html
+---
+
+### OpenPages Data Export
+
+Here's the high level steps, write a markdown documentation about OpenPages Data Export.
+
+1. Navigate to Integrations -> Export Data tab
+1. Click New Configuration 
+1. Enter Name e.g. "`Issue Data Export`", click Next
+1. Select Object types for data export, e.g. "`Issue`". Select locale, and folders.
+1. click "Next"
+1. Select destination type "IBM Cloud Object Storage"
+
+### Credentials for IBM Cloud Object storage 
+#### Navigate to IBM Cloud Object storage instance to capture the following credentials
+1. **Create Service Credentials**:
+    1. Log in to the IBM Cloud console and navigate to your instance of Object Storage.
+    1. In the navigation bar for the instance, click "Service Credentials" tab.
+    1. Click "New credential" and provide the necessary information. Switch the Include HMAC Credential to On. Verify the option is switched to On before continuing.
+    1. Click Add to generate service credential.
+    1. Expand the service credentials details and copy the following values for OpenPages configuration
+        - **Access key ID**: cos_hmac_keys.access_key_id
+        - **Secret Key**: cos_hmac_keys.secret_access_key
+1. **Create Bucket**: 
+    1. Select the IBM Cloud Object Storage instance where you plan to create the bucket.
+    1. Within instance, select the bucket that you'd like to connect. Then, click "Create bucket".
+    1. Select Create a Custom Bucket or Quickly Get Started 
+    1. Enter bucket name and configurations of the bucket.
+    1. Once bucket created, select bucket and navigate to Configuration tab. 
+    1. Copy **Public endpoint, Bucket name, Location** and paste the values to OpenPages configuration
+        - **Endpoint**: add "`https://`" to the beginning of the copied public endpoint,the complete url will be similar to `https://s3.us-south.cloud-object-storage.appdomain.cloud`
+        - **Bucket name**
+        - **Bucket region**: e.g. "`us-south`"
+
+### Test Connection & Setup Schedule
+1. Click "Test Connection" to confirm credentials are entered properly
+1. Click "Next"
+1. For set schedule, enter a name, e.g. "Daily"
+1. Select Recurring, set a time, and click Create
+
+### Test Data Export
+1. To test the connection, click on the three dots, select **"Run Data Export"**.
+1. Last Run status will show "Completed Successfully"
+1. Navigate to IBM Cloud Object Storage to view data export.

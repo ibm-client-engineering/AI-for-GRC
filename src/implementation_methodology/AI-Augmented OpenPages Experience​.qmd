@@ -70,20 +70,20 @@ The objective of this solution is to demonstrate AI for GRC solution that has th
 ## Assign Watsonx.ai model to OpenPages View
 
 1. To assign model to views, navigate to the **Administration menu**, then go to **Solution Configuration**, and click on **Views**.
-   ![](../assets/screenshots/openpages-system-config-views.png)
+   - ![Administration menu -> Solution Configuration -> Views](../assets/screenshots/openpages-system-config-views.png)
 2. Enable **Display Debug Info** by navigating to the Administration menu, then the Other tab, then click on Display Debug Info. In the screenshot below, you can see blue text under "New Risk" which indicates that you are in Debug Info View. **Click on the that blue text and it will link you to the exact view.**
-   ![](../assets/screenshots/openpages-display-debug-info.png)
+   - ![Display Debug Info](../assets/screenshots/openpages-display-debug-info.png)
 3. This is an example of what a view configuration page looks like.
-   ![](../assets/screenshots/openpages-view-page.png)
+   - ![Example View Configuration](../assets/screenshots/openpages-view-page.png)
 4. Click on the blue text "Description" and a right-hand-side panel will show up. Select the specific model that you would like to apply to this field. Click Done, then click Publish.
-   ![](../assets/screenshots/openpages-description-model-config.png)
+   - ![Assign Custom WML to fields](../assets/screenshots/openpages-description-model-config.png)
 
 ### Final Check
 
 1. Navigate back to the view where the watsonx.ai model was applied. Input text to the Description field and a lightbulb should show up.
 2. Click on the lightbulb to open the right-hand side panel where the model output will show up.
 3. You could continue update the model prompt to further improve the model performance based on your business requirements
-   ![](../assets/screenshots/5Ws-lightbulb.png)
+
 
 ---
 

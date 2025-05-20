@@ -1,0 +1,10 @@
+---
+title: "Profile-based Data Querying"
+format: html
+---
+
+### Implementation Overview
+The objective of this solution is to demonstrate AI for GRC solution that has the ability to streamline the GRC process and improve the overall efficiency of GRC workflow. To build an effective and efficient GRC system and achieve the desired outcomes for success, this solution will leverage watsonx Orchestrate to deliver these core capabilities:
+
+1. Answering questions on OpenPages Data Objects​
+1. Answering questions on OpenPages Attachments​

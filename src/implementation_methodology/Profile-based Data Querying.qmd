@@ -8,3 +8,25 @@ The objective of this solution is to demonstrate AI for GRC solution that has th
 
 1. Answering questions on OpenPages Data Objects​
 1. Answering questions on OpenPages Attachments​
+
+
+## Integrate watsonx Assistant with OpenPages
+
+### In Watsonx Assistant
+
+1. Navigate to Watsonx Assistant's **Integrations** Tab
+   - ![watsonx Orchestrate AI Assistant Integrations](../assets/screenshots/WxA-Integrations.png)
+1. Find "Web chat", click on "Open" -> choose environment, and "Confirm"
+1. Navigate to Embed Tab and Copy the content in the text box. (This is an example)
+   - ![watsonx Orchestrate AI Assistant Embed Webchat](../assets/screenshots/WxA-Webchat-embed.png)
+
+### In OpenPages
+
+1. Click Administration menu > Integrations > Watson Assistant.
+1. Click Import Configuration (The button left of New +)
+1. Paste the code snippet into the Configuration string box, and then click Import.
+1. All good! You could now start interacting with your Watsonx Assistant in OpenPages.
+
+## References
+
+- [Configuring the integration between an assistant and OpenPages](https://www.ibm.com/docs/en/openpages/9.0.0?topic=assistant-configuring-integration-between-openpages)

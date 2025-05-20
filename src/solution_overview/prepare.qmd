@@ -1,8 +1,23 @@
 ---
-title: "Step One"
+title: "Solution Overview"
 format: html
 ---
+### Overview
+The objective of this solution is to demonstrate AI for GRC solution that has the ability to streamline the GRC process and improve the overall efficiency of GRC workflow. To build an effective and efficient GRC system and achieve the desired outcomes for success, this solution will leverage watsonx Orchestrate to deliver these core capabilities:
 
-### Step One Solution - The What
+1. Capabiltiy 1
+1. Capabiltiy 2
+1. Capabiltiy 3
+1. Capabiltiy 4
+1. Capabiltiy 5
+1. Capabiltiy 6
 
-(Summarize the overarching technical solution. Explain the reasoning and strategic considerations behind the solution)
+### Technology Overview
+- Core Platform: **IBM OpenPages** and **IBM watsonx Orchestrate** 
+    - [**IBM OpenPages**](https://www.ibm.com/products/openpages)
+    - [**IBM watsonx Orchestrate**](https://www.ibm.com/products/watsonx-orchestrate): IBM watsonx Orchestrate is a collaborative AI platform that automates workflows and manages complex business processes through seamless integration with enterprise systems which empowers users to streamline operations and boost productivity while enabling different capabilities like:
+- Generative AI capabilities: [**IBM watsonx.ai platform**](https://www.ibm.com/products/watsonx-ai)
+
+### User Journey
+#### Current
+#### Proposed

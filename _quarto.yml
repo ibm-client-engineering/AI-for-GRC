@@ -38,7 +38,7 @@ website:
           text: Problem Definition
         - section: Solution Overview
           contents:
-          - text: Prepare
+          - text: Software Requirements
             href: src/solution_overview/prepare.qmd
           - text: Environment 
             href: src/solution_overview/environment.qmd

@@ -23,7 +23,8 @@ Here's the high level steps, write a markdown documentation about OpenPages Data
 1. **Create Service Credentials**:
     1. Log in to the IBM Cloud console and navigate to your instance of Object Storage.
     1. In the navigation bar for the instance, click "Service Credentials" tab.
-    1. Click "New credential" and provide the necessary information. Switch the Include HMAC Credential to On. Verify the option is switched to On before continuing.
+    1. Click "New credential" and provide the necessary information. Select “Manager” role. Switch the Include HMAC Credential to On. Verify the option is switched to On before continuing.
+        - ![Create IBM Cloud Object Storage Service Credentials](../assets/screenshots/cos-create-service-credentials.png)
     1. Click Add to generate service credential.
     1. Expand the service credentials details and copy the following values for OpenPages configuration
         - **Access key ID**: cos_hmac_keys.access_key_id

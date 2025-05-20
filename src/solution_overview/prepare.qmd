@@ -17,7 +17,7 @@ The objective of this solution is to demonstrate AI for GRC solution that has th
 ### Technology Overview
 - Core Platform: **IBM OpenPages** and **IBM watsonx Orchestrate** 
     - [**IBM OpenPages**](https://www.ibm.com/products/openpages)
-    - [**IBM watsonx Orchestrate**](https://www.ibm.com/products/watsonx-orchestrate): IBM watsonx Orchestrate is a collaborative AI platform that automates workflows and manages complex business processes through seamless integration with enterprise systems which empowers users to streamline operations and boost productivity while enabling different capabilities like:
+    - [**IBM watsonx Orchestrate**](https://www.ibm.com/products/watsonx-orchestrate): IBM watsonx Orchestrate is a collaborative AI platform that automates workflows and manages complex business processes through seamless integration with enterprise systems which empowers users to streamline operations and boost productivity while enabling different capabilities.
 - Generative AI capabilities: [**IBM watsonx.ai platform**](https://www.ibm.com/products/watsonx-ai)
 
 ### User Journey

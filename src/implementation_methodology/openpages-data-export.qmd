@@ -10,11 +10,15 @@ Here's the high level steps, write a markdown documentation about OpenPages Data
 1. Navigate to Integrations -> Export Data tab
 1. Click New Configuration 
 1. Enter Name e.g. "`Issue Data Export`", click Next
+    - ![OpenPages Data Export - General](../assets/screenshots/openpages-dataexport-general.png)
 1. Select Object types for data export, e.g. "`Issue`". Select locale, and folders.
+    - ![OpenPages Data Export - Selection Details](../assets/screenshots/openpages-dataexport-selection-details.png)
 1. click "Next"
-1. Select destination type "IBM Cloud Object Storage"
+
 
 ### Credentials for IBM Cloud Object storage 
+- Select destination type "IBM Cloud Object Storage"
+
 #### Navigate to IBM Cloud Object storage instance to capture the following credentials
 1. **Create Service Credentials**:
     1. Log in to the IBM Cloud console and navigate to your instance of Object Storage.
@@ -34,6 +38,8 @@ Here's the high level steps, write a markdown documentation about OpenPages Data
         - **Endpoint**: add "`https://`" to the beginning of the copied public endpoint,the complete url will be similar to `https://s3.us-south.cloud-object-storage.appdomain.cloud`
         - **Bucket name**
         - **Bucket region**: e.g. "`us-south`"
+    - ![OpenPages Data Export - Set Destination](../assets/screenshots/openpages-dataexport-set-destination.png)
+
 
 ### Test Connection & Setup Schedule
 1. Click "Test Connection" to confirm credentials are entered properly
@@ -43,5 +49,6 @@ Here's the high level steps, write a markdown documentation about OpenPages Data
 
 ### Test Data Export
 1. To test the connection, click on the three dots, select **"Run Data Export"**.
+    - ![OpenPages Data Export - Run Data Export](../assets/screenshots/openpages-dataexport-run-dataexport.png)
 1. Last Run status will show "Completed Successfully"
 1. Navigate to IBM Cloud Object Storage to view data export.

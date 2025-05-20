@@ -1,6 +1,6 @@
 
 ---
-title: "Project Name"
+title: "AI for GRC"
 subtitle: "Subtitle"
 format: html
 ---
@@ -9,7 +9,7 @@ format: html
 ```
 <br>
 ---
-Description: "Project Name"
+Description: "AI for GRC"
 ---
 
 ## The Why

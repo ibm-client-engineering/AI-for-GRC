@@ -7,7 +7,7 @@ format:
 
 ---
 
-# Project Name
+# AI for GRC
 
 Subtitle
 

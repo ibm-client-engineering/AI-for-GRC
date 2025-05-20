@@ -3,9 +3,9 @@ title: "AI-Augmented OpenPages Experience​"
 format: html
 ---
 
-### Implementation Overview
+## Implementation Overview
 
-The objective of this solution is to demonstrate AI for GRC solution that has the ability to streamline the GRC process and improve the overall efficiency of GRC workflow. To build an effective and efficient GRC system and achieve the desired outcomes for success, this solution will leverage watsonx Orchestrate to deliver these core capabilities:
+The objective of this solution is to demonstrate AI for GRC solution that has the ability to streamline the GRC process and improve the overall efficiency of GRC workflow. To build an effective and efficient GRC system and achieve the desired outcomes for success, this solution will leverage **watsonx.ai** to deliver these core capabilities:
 
 1. Automating Child Data Object Creation from Parent Data Object Entries
 1. Realtime Similarity Identification for Data Objects
@@ -14,7 +14,7 @@ The objective of this solution is to demonstrate AI for GRC solution that has th
 
 ## Integrate watsonx.ai Model into OpenPages
 
-#### Prerequisites
+### Prerequisites
 - IBM Cloud Account
 - IBM OpenPages instance
 - IBM watsonx.ai instance with deployed asset

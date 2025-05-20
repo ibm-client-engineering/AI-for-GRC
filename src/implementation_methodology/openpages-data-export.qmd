@@ -53,3 +53,6 @@ Here's the high level steps, write a markdown documentation about OpenPages Data
     - ![OpenPages Data Export - Run Data Export](../assets/screenshots/openpages-dataexport-run-dataexport.png)
 1. Last Run status will show "Completed Successfully"
 1. Navigate to IBM Cloud Object Storage to view data export.
+
+### References
+- [Exporting OpenPages data to be used by other applications](https://www.ibm.com/docs/en/openpages/9.1.0?topic=ci-exporting-openpages-data-be-used-by-other-applications)
